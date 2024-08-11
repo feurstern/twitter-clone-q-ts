@@ -21,7 +21,8 @@ const listRightDrawer: Component = defineAsyncComponent(() => import('../compone
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title class="text-weight-bold">
-          Twitter - X
+          <span classs="gt-sm">Twitter - X</span>
+          <q-icon class="q-pa-md lt-md absolute-center" name="book" size="sm" color="primary" flat />
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -29,7 +30,7 @@ const listRightDrawer: Component = defineAsyncComponent(() => import('../compone
 
     <q-drawer :width="280" show-if-above v-model="leftDrawerOpen" side="left" bordered>
       <!-- drawer
-      <i class="fa-sharp fa-regular fa-salad"></i> 
+      <i class="fa-sharp  fa-regular fa-salad"></i> 
       content -->
       <q-icon class="q-pa-md" name="book" size="lg" color="primary" flat />
       <list-left-drawer />
