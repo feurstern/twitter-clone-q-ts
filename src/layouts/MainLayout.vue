@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Component, defineAsyncComponent } from 'vue';
 import useMainLayout from './MainLayout';
+// import { route } from 'quasar/wrappers';
 
 const {
   leftDrawerOpen,
@@ -21,7 +22,7 @@ const listRightDrawer: Component = defineAsyncComponent(() => import('../compone
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title class="text-weight-bold">
-          <span classs="gt-sm">Twitter - X</span>
+          <span classs="gt-sm">{{ $route.name }}</span>
           <q-icon class="q-pa-md lt-md absolute-center" name="book" size="sm" color="primary" flat />
         </q-toolbar-title>
       </q-toolbar>
