@@ -40,7 +40,7 @@
                     <q-item-label>{{data.accountName}} </q-item-label>
                 </div>
                 <q-item-label> {{data.accountId}} </q-item-label>
-                <q-icon class="material-symbols-outlined" />
+
             </q-item-section>
             
             <q-item-section side>

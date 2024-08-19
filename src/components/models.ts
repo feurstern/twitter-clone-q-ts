@@ -32,3 +32,17 @@ export interface settingMenuListInterface {
   menu: string
   subMenu: string[],
 }
+
+/* actually I want to set the id properties, 
+but since it was for prototype and mostly hardcode
+I will use the default index instead as the primary id
+*/
+export interface newsFeedInterface {
+  username: string,
+  userProfileImage: string,
+  userId: string,
+  caption: string,
+  video?: string[],
+  image?: string[]
+  datePosted: string,
+}
