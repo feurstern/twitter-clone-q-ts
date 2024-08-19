@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import useRightDrawe from './RightDrawer';
-
-const { rightDrawerListData, rightDrawerWhoIsToFollowData } = useRightDrawe();
-
+    import useRightDrawe from './RightDrawer';
+    const { rightDrawerListData, rightDrawerWhoIsToFollowData } = useRightDrawe();
 </script>
 
 <template>
@@ -21,6 +19,9 @@ const { rightDrawerListData, rightDrawerWhoIsToFollowData } = useRightDrawe();
    </q-card>
 
    <q-card>
+    <q-toolbar class="font-weight">
+         <q-toolbar-title>Who is to Follow</q-toolbar-title>    
+    </q-toolbar>
     <q-list bordered>
         <q-item v-for="(data,index) in rightDrawerWhoIsToFollowData" :key=index>
             <q-item-section avatar>
