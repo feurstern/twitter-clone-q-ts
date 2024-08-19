@@ -13,8 +13,22 @@ export interface listDrawerInterfacee {
   path: string
 }
 
-export interface rightDrawerInterface {
+export interface rightDrawerListInterface {
   title: string,
   subTitle: string,
   caption: string
+}
+
+export interface rightDrawerWhoIsToFollowInterface {
+  accountName: string,
+  accountId: string
+  image: string,
+  isViP: boolean
+
+}
+
+
+export interface settingMenuListInterface {
+  menu: string
+  subMenu: string[],
 }

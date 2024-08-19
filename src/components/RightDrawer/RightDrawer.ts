@@ -1,8 +1,8 @@
 import { ref } from 'vue';
-import { rightDrawerInterface } from '../models';
+import { rightDrawerListInterface, rightDrawerWhoIsToFollowInterface } from '../models';
 
 export default () => {
-    const rightDrawerListData = ref<rightDrawerInterface[]>([
+    const rightDrawerListData = ref<rightDrawerListInterface[]>([
         {
             title: 'Technology',
             subTitle: 'Programming Language',
@@ -22,6 +22,35 @@ export default () => {
         },
 
     ])
+
+    const rightDrawerWhoIsToFollowData = ref<rightDrawerWhoIsToFollowInterface[]>([
+        {
+            accountName: 'CodeDesign_AI',
+            accountId: 'CodeDesign_AI',
+            image: 'https://w7.pngwing.com/pngs/18/497/png-transparent-black-and-blue-atom-icon-screenshot-react-javascript-responsive-web-design-github-angularjs-github-logo-electric-blue-signage.png',
+            isViP: false
+        },
+        {
+            accountName: 'NSDAP AI',
+            accountId: 'horstwesselliede',
+            image: '',
+            isViP: true
+        },
+        {
+            accountName: 'FreeCodeCamp',
+            accountId: 'freecodecamp',
+            image: '',
+            isViP: true
+        },
+        {
+            accountName: 'W3SCHOOL',
+            accountId: 'w3_school',
+            image: '',
+            isViP: true
+        }
+    ])
+
+
 
     return {
         rightDrawerListData

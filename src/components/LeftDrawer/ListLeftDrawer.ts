@@ -2,14 +2,12 @@ import { listDrawerInterfacee } from '../models';
 import { ref } from 'vue';
 
 export default () => {
-
     const dataItemLeftListDrawe = ref<listDrawerInterfacee[]>([
         {
             iconName: 'home',
             sectionName: 'Home',
             path: '/'
         },
-
         {
             iconName: 'circle',
             sectionName: 'About',
@@ -26,8 +24,6 @@ export default () => {
             path: '/setting'
         },
     ])
-
-
     return {
         dataItemLeftListDrawe
     }

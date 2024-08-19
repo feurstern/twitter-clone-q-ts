@@ -1,7 +1,6 @@
 <script setup lang="ts">
 </script>
 
-
 <template>
     <q-page class="q-pa-lg">
         <h4 class="q-st-none q-mb-md text-weight-bold">About Genshin Impact</h4>
@@ -19,6 +18,14 @@
                 hic
                 id rem!
             </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eius consequatur distinctio ipsum
+                deserunt nihil impedit ipsam nobis laborum vel veniam maiores, soluta, architecto maxime quibusdam,
+                dolorum dolor assumenda porro.
+            </p>
+            <q-img src="https://static.myfigurecollection.net/upload/pictures/2021/10/30/2898934.gif" />
+
+            <q-img src="https://static.myfigurecollection.net/upload/pictures/2021/10/30/2898934.gif" />
         </div>
     </q-page>
 </template>
