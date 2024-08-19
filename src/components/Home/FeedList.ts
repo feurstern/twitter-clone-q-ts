@@ -2,8 +2,8 @@ import { newsFeedInterface } from '../models';
 import { ref } from 'vue';
 
 
-export default () => {
 
+export default () => {
     ///
     const newsFeedDataList = ref<newsFeedInterface[]>([
         {

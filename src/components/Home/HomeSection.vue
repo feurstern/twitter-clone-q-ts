@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import { Component, defineAsyncComponent } from 'vue';
 import useHomeSection from './HomeSection';
 const { text, submitPostData } = useHomeSection();
+
+const feedList : Component = defineAsyncComponent(()=> import('./FeedList.vue'));
+
+
 </script>
 
 <template>
@@ -24,5 +29,10 @@ const { text, submitPostData } = useHomeSection();
                 <q-btn @click="submitPostData" round dense flat icon="send" />
             </template>
         </q-input>
+
+        <q-separator />
+
+        <feed-list />
+
     </div>
 </template>
