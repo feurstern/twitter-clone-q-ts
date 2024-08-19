@@ -50,9 +50,8 @@ export default () => {
         }
     ])
 
-
-
     return {
-        rightDrawerListData
+        rightDrawerListData,
+        rightDrawerWhoIsToFollowData
     }
 }
