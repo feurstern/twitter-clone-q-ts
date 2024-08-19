@@ -10,7 +10,8 @@ export interface Meta {
 export interface listDrawerInterfacee {
   iconName: string,
   sectionName: string,
-  path: string
+  path?: string,
+  fn?: string,
 }
 
 export interface rightDrawerListInterface {
@@ -24,7 +25,6 @@ export interface rightDrawerWhoIsToFollowInterface {
   accountId: string
   image: string,
   isViP: boolean
-
 }
 
 

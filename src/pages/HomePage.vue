@@ -10,7 +10,6 @@ const homeSection: Component = defineAsyncComponent(() => import('../components/
         <h4 class="font-weight-bold">
             Home
         </h4>
-
         <home-section />
     </q-page>
 </template>

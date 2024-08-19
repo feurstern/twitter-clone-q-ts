@@ -25,6 +25,17 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/NotificationPage.vue'),
         name: 'Notification'
       }
+    ],
+  },
+  {
+    path: '/',
+    component: () => import('layouts/LoginLayout.vue'),
+    children: [
+      {
+        path: 'login',
+        component: () => import('pages/MainLoginPage.vue'),
+        name: 'Login'
+      },
 
     ],
   },
