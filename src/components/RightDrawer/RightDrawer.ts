@@ -39,13 +39,13 @@ export default () => {
         {
             accountName: 'FreeCodeCamp',
             accountId: 'freecodecamp',
-            image: '',
+            image: 'https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg',
             isViP: true
         },
         {
             accountName: 'W3SCHOOL',
             accountId: 'w3_school',
-            image: '',
+            image: 'https://w7.pngwing.com/pngs/18/497/png-transparent-black-and-blue-atom-icon-screenshot-react-javascript-responsive-web-design-github-angularjs-github-logo-electric-blue-signage.png',
             isViP: true
         }
     ])
